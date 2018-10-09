@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台首页</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/fisrt—head.css">
+    <link rel="stylesheet" href="css/fisrt—one.css">
+    <style type="text/css">
+        @media screen and (min-width:300px) and (max-width:1466px){
+            .tak_box{
+                width: 95%;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            .exam_box{
+                width: 95%;
+                margin-right:2px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--头部-->
+    <header>
+        <s></s>
+        <p class="head_p">
+            <i class="iconfont icon-shezhi2"></i>
+            <span class="head_span">HYBRID</span>
+        </p>
+        <ul class="head_uls">
+            <li class="lis">
+                <i class="iconfont icon-youjian ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-fenlei ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-icon-- ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-renshu ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+        </ul>
+    </header>
+
+    <!--中间-->
+    <div class="nav">
+        <!--列表-->
+        <div class="nav_left">
+            <ul class="nav_left_uls">
+                <li class="lisa"><i class="iconfont icon-fenlei"></i>Dashboard</li>
+                <!--点击按钮列表隐藏-->
+                <p class="nav_left_p">
+                    <b></b>
+                </p>
+
+                <li class="lisb lisd"><i class="iconfont icon-fenlei"></i>UI Elements</li>
+                <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Tabs & Panels</li>
+                <li class="lisb lisv"><i class="iconfont icon-fenlei"></i>Responsive Tables</li>
+                <li class="lisb"><i class="iconfont icon-fenlei"></i>Forms</li>
+
+                <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Multi-Level Dropdown
+                    <span class="lisc_sa" style="padding-left:45px"> < </span>
+                    <ul class="lisc_uls">
+                        <li>Second Level Link</li>
+                        <li>Second Level Link</li>
+                        <li class="lisc_licv">Second Level Link
+                            <span style="padding-left:140px;font-size:16px"> < </span>
+                            <ul class="lisd_uls">
+                                <li>level Link is to</li>
+                                <li>level Link is to</li>
+                                <li>level Link is to</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="lisb"><i class="iconfont icon-fenlei"></i>Empty Page</li>
+            </ul>
+        </div>
+
+        <!--数据-->
+        <div class="nav_right">
+            <h1 class="right_h1">Dashboard
+                <small>Summary of your App</small>
+            </h1>
+            <p class="right_p">
+                Home
+                <span>/</span>
+                Library
+                <span>/</span>
+                <span>Data</span>
+            </p>
+            <div class="right_box">
+                <div class="right_box_a">
+                    <img style="float:left" src="img/图标.png">
+                    <div class="right_box_ac">
+                        <p style="color:#8a8a8a;font-size:45px">8,457</p>
+                        <p style="color:#2b2e33;font-size:20px">Daily Visits</p>
+                    </div>
+                </div>
+                <div class="right_box_b right_box_c">
+                    <img style="margin:17px 0 53px 20px" src="img/购物.png">
+                    <div class="right_box_ab">
+                        <p style="color:#8a8a8a;font-size:40px">52,160</p>
+                        <p style="color:#2b2e33;font-size:12px">Sales</p>
+                    </div>
+                </div>
+                <div class="right_box_b right_box_d">
+                    <img style="margin:17px 0 53px 20px" src="img/微.png">
+                    <div class="right_box_ab">
+                        <p style="color:#8a8a8a;font-size:40px">15,823</p>
+                        <p style="color:#2b2e33;font-size:12px">Comments</p>
+                    </div>
+                </div>
+                <div class="right_box_b">
+                    <img style="margin:17px 0 53px 20px" src="img/00.png">
+                    <div class="right_box_ab">
+                        <p style="color:#8a8a8a;font-size:40px">26,752</p>
+                        <p style="color:#2b2e33;font-size:12px">No. of Visits</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Area Chart-->
+            <div class="chart_box">
+                <div class="hcart_boxa"></div>
+            </div>
+
+            <!--Line Chart-->
+            <div class="chart_line"></div>
+
+            <!--Bar Chart Example-->
+            <div class="bar_box">
+                <div class="bar_box_di">
+                    <h4>Customers</h4>
+                    <div class="bing"></div>
+                </div>
+                <div class="bar_box_di">
+                    <h4>Sales</h4>
+                    <div class="bing"></div>
+                </div>
+                <div class="bar_box_di">
+                    <h4>Profits</h4>
+                    <div class="bing"></div>
+                </div>
+                <div class="bar_box_di bar_box_dia">
+                    <h4>No. of Visits</h4>
+                    <div class="bing"></div>
+                </div>
+            </div>
+
+            <!--柱状图-->
+            <div class="zhuzhuang">
+                <h4 style="line-height:60px;margin-left: 20px">Bar Chart Example</h4>
+                <div class="zhu_chat"></div>
+            </div>
+
+            <!--饼状图2-->
+            <div class="b_zhuang">
+                <h4 style="line-height:60px;margin-left: 20px"> Donut Chart Example</h4>
+                <div class="bzhuang"></div>
+            </div>
+
+            <!--Tasks Panel-->
+            <div class="tak_box">
+                <h3>Tasks Panel</h3>
+                <table class="tak_box_tab" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-weixin"></i>
+                            <span class="td_spa">7 minutes ago</span>
+                            <span>Commented on a post</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-qiache"></i>
+                            <span>Order 392 shipped</span>
+                            <span class="td_spa">16 minutes ago</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-diqiu"></i>
+                            <span>Invoice 653 has paid</span>
+                            <span class="td_spa">36 minutes ago</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-wo"></i>
+                            <span>A new user has added</span>
+                            <span class="td_spa">1 hour ago</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-wo"></i>
+                            <span>A new user has added</span>
+                            <span class="td_spa">1.23 hour ago</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="iconfont icon-diqiu"></i>
+                            <span>Saved the world</span>
+                            <span class="td_spa">yesterday</span>
+                        </td>
+                    </tr>
+
+                </table>
+                <a class="a1" href="#">
+                    More Tasks
+                    <img style="vertical-align: middle" src="img/jian.png">
+                </a>
+            </div>
+
+            <!--Responsive Table Example-->
+            <div class="exam_box">
+                <h3>Responsive Table Example</h3>
+                <table class="tak_box_tac" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>S No.</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>User Name</th>
+                        <th>Email ID.</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>John15482</td>
+                        <td>name@site.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kimsila</td>
+                        <td>Marriye</td>
+                        <td>Kim1425</td>
+                        <td>name@site.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rossye</td>
+                        <td>Nermal</td>
+                        <td>Rossy1245</td>
+                        <td>name@site.com</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Richard</td>
+                        <td>Orieal</td>
+                        <td>Rich5685</td>
+                        <td>name@site.com</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Jacob</td>
+                        <td>Hielsar</td>
+                        <td>Jac4587</td>
+                        <td>name@site.com</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Wrapel</td>
+                        <td>Dere</td>
+                        <td>Wrap4585</td>
+                        <td>name@site.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class="pd_bx">
+                Copyright © 2016.Company name All rights reserved.
+                <a href="#" style="color: #338bc8">网页模板</a>
+            </p>
+        </div>
+    </div>
+
+    <!--划过邮箱-->
+    <div class="show jonhs">
+        <div class="jonh_box">
+            <span>John Doe</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Today</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        </div>
+        <div class="jonh_box">
+            <span>John Smith</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
+        </div>
+        <div class="jonh_box">
+            <span>John Smith</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+        </div>
+        <a class="jn_a" href="#">Read All Messages > </a>
+    </div>
+
+    <!--划过分类-->
+    <div class="show fen">
+        <div class="fen_box">
+            <span>Task 1</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 2</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">28% Complete</span>
+            <div class="box_js">
+                <img src="img/lanse.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 3</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 4</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">85% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <a class="jn_a" href="#">See All Tasks > </a>
+    </div>
+
+    <!--铃铛-->
+    <div class="show ling_box">
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <a class="jn_a" href="#">See All Tasks > </a>
+    </div>
+
+    <!--用户-->
+    <div class="show nams">
+        <span> <i class="iconfont icon-renshu ic1"></i>User Profile</span>
+        <span> <i class="iconfont icon-renshu ic1"></i>Settings</span>
+        <span> <i class="iconfont icon-fenlei"></i>Logout</span>
+    </div>
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/jquery.ba-resize.js"></script>
+<script type="text/javascript" src="js/fister—one.js"></script>

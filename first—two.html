@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/fisrt—head.css">
+    <link rel="stylesheet" href="css/fisrt—one.css">
+    <style type="text/css">
+        .nav_righs{
+            width: 80%;
+            height:auto;
+            float: right;
+            margin-top:75px;
+            background-color:#d8d9de;
+        }
+        .righs_top {
+            width:100%;
+            height:auto;
+            display: flex;
+            padding-top: 30px;
+            justify-content: space-around;
+        }
+        .top_p1{
+            width:30%;
+            height: 154px;
+            background-color:#ffffff;
+        }
+        .top_a1{
+            display:block;
+            width:100%;
+            height:80px;
+            background-color:#ffffff;
+        }
+        .pic_a{
+            float: left;
+            padding:17px 0 0 20px;
+        }
+        .top_al{
+            width:60px;
+            height:40px;
+            padding:18px 0 0 30px;
+            float: left;
+        }
+        .top_a2{
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding:18px 30px 0 0;
+        }
+        .p_box{
+            width:100%;
+            height:74px;
+        }
+
+
+        /*中间*/
+        .cent-p{
+            width:100%;
+            height: 530px;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .cent_box1{
+            width:30%;
+            height:530px;
+            margin-left:4px;
+            background-color:#ffffff;
+        }
+        .tal{
+            width:100%;
+            text-align: center;
+            border:1px solid #e3ebf3;
+            line-height:40px;
+        }
+        .tal td{
+            border:1px solid #e3ebf3;
+        }
+        .tal th{
+            color:#6b6f82;
+        }
+        .cent_bo2{
+            height:65px;
+        }
+        .cent_bo2 .pa1{
+            padding:15px 0 0 20px;
+            float: left;
+        }
+        .cent_bo2 .pa2{
+            width:120px;
+            height:30px;
+            border:1px solid #1e9ef0;
+            border-radius:10px;
+            float: right;
+            margin:9px 20px 0 0;
+        }
+        .cent_bo2 .pa2 em{
+            font-style: normal;
+            line-height:32px;
+            width:60px;
+            text-align:center;
+        }
+        .cent_bo2 .pa2 .em1{
+            float: left;
+            background-color:#1e9ef0;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+        }
+
+        .cent_box2{
+            width:64%;
+            background-color:#ffffff;
+            margin-left:10px;
+        }
+        .bix_p1{
+            width:100%;
+            height:70px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bix_sp1{
+            font-size:14px;
+            color:#494b57;
+            padding:10px 0 0 20px;
+        }
+        .bix_sp2{
+            font-size:14px;
+            color:#fa5c71;
+            padding:10px 20px 0 0;
+        }
+
+        .cent_bixa{
+            width:100%;
+            height:434px;
+        }
+        .bix_uls{
+            width:95%;
+            height:auto;
+            background-color: gray;
+            margin:10px 20px 0 20px;
+        }
+        .bix_uls li{
+            width:33%;
+            height:44px;
+            color:#3dacf4;
+            font-size:12px;
+            line-height:44px;
+            text-align: center;
+            float: left;
+            border-bottom:1px solid #1e9ff2;
+        }
+        .uls_lis span{
+            display: inline-block;
+            width:100%;
+            height:43px;
+            border-bottom:2px solid #1e9ff2;
+        }
+        .spa_box{
+            clear: both;
+            width:95%;
+            margin:10px 20px 0 20px;
+        }
+        .ols{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ols_li{
+            width:50%;
+        }
+        .ols_lib{
+            margin-right:-25px;
+        }
+        .ols_p{
+            width:91%;
+            height:76px;
+            line-height:76px;
+        }
+
+        .spa1{
+            width:20%;
+            display: inline-block;
+            line-height:42px;
+        }
+        input{
+            width:70%;
+            height:30px;
+            text-indent:10px;
+            border-radius:5px;
+            outline: none;
+            border:none;
+        }
+
+        .s_box{
+            width:60%;
+            height:70px;
+            margin-left:74px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .s_box .i1{
+            display: inline-block;
+            width:47px;
+            height:27px;
+            border:1px solid #6b6f82;
+            border-radius:10px;
+            font-style:normal;
+            font-size:12px;
+            text-align: center;
+            line-height:27px;
+            color:#6b6f82;
+        }
+        .i_a1{
+            background-color:#7cb9e1;
+        }
+        .i2{
+            display: block;
+            width:91%;
+            height:1px;
+            border-bottom:1px solid #7b7b7b;
+            margin:22px 0 15px 0;
+        }
+        .p0{
+            width:92%;
+            background-color:#28d094;
+            height:40px;
+            color:white;
+            text-align: center;
+            line-height:40px;
+            border-radius:20px;
+        }
+        .lis_a{
+            width:1px;
+            border-right: 1px solid #7b7b7b;
+            background-color: #7b7b7b;
+            margin-left:-30px;
+        }
+
+        .tabl_box{
+            margin:80px 20px 0 20px;
+            width:97%;
+            height:auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box_talb{
+            width:49%;
+            background-color:#ffffff;
+        }
+        .tabl_box .tal_as{
+            width:100%;
+        }
+
+        .tabl_box .tal_as th,td{
+            border-top:1px solid #e3ebf3;
+            border-bottom:1px solid #e3ebf3;
+            text-align: center;
+            line-height:45px;
+        }
+
+        .tal_boxa{
+            width:97%;
+            background-color:#ffffff;
+            margin:30px 0 0 20px;
+        }
+
+
+        .box_talbc{
+            width:100%;
+            background-color:#ffffff;
+        }
+        .pc_a1{
+            width:100px;
+            height:32px;
+            float: right;
+            margin-top:8px;
+            margin-right:20px;
+            color:white;
+            font-size:14px;
+            text-align: center;
+            line-height:32px;
+            background-color:hotpink;
+            border-radius:20px;
+        }
+        .tal_as{
+            width:100%;
+            cursor: pointer;
+        }
+        .tal_as th,td{
+            height:51.6px;
+            line-height:51.6px;
+        }
+        .td_a1 p{
+            width:62px;
+            height:27px;
+            border:1px solid #ff4961;
+            border-radius:20px;
+            line-height: 27px;
+            color:#ff4961;
+            margin:0 auto;
+        }
+
+
+        /*媒体查询*/
+        @media screen and (min-width:640px) and (max-width:1200px){
+            .nav_left{
+                display: none;
+            }
+            .nav_righs{
+                width:100%;
+            }
+            .righs_top{
+                display: flex;
+                flex-direction: column;
+            }
+            .top_p1{
+                width:100%;
+                margin-bottom:20px;
+            }
+            .cent-p{
+                display: flex;
+                flex-direction: column;
+            }
+            .cent_box1{
+                width:100%;
+                margin:480px 0 0 0;
+            }
+            .cent_box2{
+                width:100%;
+                margin:30px 0 0 0;
+            }
+            .tabl_box{
+                display: flex;
+                flex-direction: column;
+            }
+            .box_talbs{
+                width: 100%;
+                margin:450px 0 0 0;
+            }
+            .box_talba{
+                width: 100%;
+                margin:20px 0 0 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <header>
+        <s></s>
+        <p class="head_p">
+            <i class="iconfont icon-shezhi2"></i>
+            <span class="head_span">HYBRID</span>
+        </p>
+        <ul class="head_uls">
+            <li class="lis">
+                <i class="iconfont icon-youjian ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-fenlei ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-icon-- ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+            <li class="lis">
+                <i class="iconfont icon-renshu ic1"></i>
+                <i class="iconfont icon-xiajiantou ic2"></i>
+            </li>
+        </ul>
+    </header>
+
+    <!--划过邮箱-->
+    <div class="show jonhs">
+        <div class="jonh_box">
+            <span>John Doe</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Today</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        </div>
+        <div class="jonh_box">
+            <span>John Smith</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
+        </div>
+        <div class="jonh_box">
+            <span>John Smith</span>
+            <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+        </div>
+        <a class="jn_a" href="#">Read All Messages > </a>
+    </div>
+
+    <!--划过分类-->
+    <div class="show fen">
+        <div class="fen_box">
+            <span>Task 1</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 2</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">28% Complete</span>
+            <div class="box_js">
+                <img src="img/lanse.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 3</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <div class="fen_box">
+            <span>Task 4</span>
+            <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">85% Complete</span>
+            <div class="box_js">
+                <img src="img/绿色.gif">
+            </div>
+        </div>
+        <a class="jn_a" href="#">See All Tasks > </a>
+    </div>
+
+    <!--铃铛-->
+    <div class="show ling_box">
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <div class="li_box">
+            <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+            <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+        </div>
+        <a class="jn_a" href="#">See All Tasks > </a>
+    </div>
+
+    <!--用户-->
+    <div class="show nams">
+        <span> <i class="iconfont icon-renshu ic1"></i>User Profile</span>
+        <span> <i class="iconfont icon-renshu ic1"></i>Settings</span>
+        <span> <i class="iconfont icon-fenlei"></i>Logout</span>
+    </div>
+
+    <!--中间-->
+    <div class="nav">
+        <!--列表-->
+        <div class="nav_left">
+            <ul class="nav_left_uls">
+                <li class="lisa"><i class="iconfont icon-fenlei"></i>Dashboard</li>
+                <!--点击按钮列表隐藏-->
+                <p class="nav_left_p">
+                    <b></b>
+                </p>
+
+                <li class="lisb lisd"><i class="iconfont icon-fenlei"></i>UI Elements</li>
+                <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Tabs & Panels</li>
+                <li class="lisb lisv"><i class="iconfont icon-fenlei"></i>Responsive Tables</li>
+                <li class="lisb"><i class="iconfont icon-fenlei"></i>Forms</li>
+
+                <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Multi-Level Dropdown
+                    <span class="lisc_sa" style="padding-left:45px"> < </span>
+                    <ul class="lisc_uls">
+                        <li>Second Level Link</li>
+                        <li>Second Level Link</li>
+                        <li class="lisc_licv">Second Level Link
+                            <span style="padding-left:140px;font-size:16px"> < </span>
+                            <ul class="lisd_uls">
+                                <li>level Link is to</li>
+                                <li>level Link is to</li>
+                                <li>level Link is to</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="lisb"><i class="iconfont icon-fenlei"></i>Empty Page</li>
+            </ul>
+        </div>
+        <!--右边-->
+        <div class="nav_righs">
+
+            <!--上边-->
+            <div class="righs_top">
+                <div class="top_p1">
+                  <span class="top_a1">
+                      <img class="pic_a" src="img/比特.png">
+                        <p class="top_al">
+                            <span>BTC</span>
+                            <span>Bitcoin</span>
+                        </p>
+                        <p class="top_a2">
+                            <span>$9,980</span>
+                            <span>31% <img src="img/lu.png"></span>
+                        </p>
+                  </span>
+                    <p class="p_box"></p>
+                </div>
+                <div class="top_p1">
+                  <span class="top_a1">
+                      <img class="pic_a" src="img/比特.png">
+                        <p class="top_al">
+                            <span>BTC</span>
+                            <span>Bitcoin</span>
+                        </p>
+                        <p class="top_a2">
+                            <span>$9,980</span>
+                            <span>31% <img src="img/lu.png"></span>
+                        </p>
+                  </span>
+                    <p class="p_box p_box1"></p>
+                </div>
+                <div class="top_p1">
+                  <span class="top_a1">
+                      <img class="pic_a" src="img/比特.png">
+                        <p class="top_al">
+                            <span>BTC</span>
+                            <span>Bitcoin</span>
+                        </p>
+                        <p class="top_a2">
+                            <span>$9,980</span>
+                            <span>31% <img src="img/lu.png"></span>
+                        </p>
+                  </span>
+                    <p class="p_box p_box2"></p>
+                </div>
+            </div>
+
+            <!--中间-->
+            <div class="cent-p">
+                <div class="cent_box1">
+                    <div class="cent_bo2">
+                        <p class="pa1">Trade History</p>
+                        <p class="pa2">
+                            <em class="em1">Market</em>
+                            <em style="float: right">Yours</em>
+                        </p>
+                    </div>
+                    <table class="tal" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>Price($)</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>11900.12</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                            <td>11:23:25</td>
+                        </tr>
+                        <tr>
+                            <td>11903.18</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                            <td>11:23:05</td>
+                        </tr>
+                        <tr>
+                            <td>11899.56</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                            <td>11:25:50</td>
+                        </tr>
+                        <tr>
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                        <tr>
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                        <tr>
+                            <td>11900.12</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                            <td>11:23:25</td>
+                        </tr>
+                        <tr>
+                            <td>11903.18</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                            <td>11:23:05</td>
+                        </tr>
+                        <tr>
+                            <td>11899.56</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                            <td>11:25:50</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                <div class="cent_box2">
+                    <div class="bix_p1">
+                        <span class="bix_sp1">Place Order</span>
+                        <span class="bix_sp2">Fee:0.2%</span>
+                    </div>
+
+                    <div class="cent_bixa">
+                        <ul class="bix_uls">
+                            <li class="uls_lis"><span>Limit</span></li>
+                            <li><span>Market</span></li>
+                            <li><span>Stop Limit</span></li>
+                        </ul>
+                        <div class="spa_box">
+                            <ol class="ols">
+                                <li class="ols_li">
+                                    <p class="ols_p">
+                                        <span style="color:#464855">Buy BTC</span>
+                                        <span style="color:#9da0ad;float: right;padding-right:10px">USD Balance:$ 5000.00</span>
+                                    </p>
+                                    <span class="spa1" style="margin-bottom:20px">Price</span>
+                                    <input type="number" placeholder="$11916.9"><br>
+                                    <span class="spa1">Amount</span>
+                                    <input type="number" placeholder="0.026547 BTC"><br>
+                                    <div class="s_box">
+                                        <i class="i1">25%</i>
+                                        <i class="i1">50%</i>
+                                        <i class="i1">75%</i>
+                                        <i class="i1">100%</i>
+                                    </div>
+                                    <span class="spa1">Total</span>
+                                    <input type="number" placeholder="0.026547 BTC"><br>
+                                    <i class="i2"></i>
+                                    <p class="p0">Buy Btc</p>
+                                </li>
+                                <li class="lis_a"></li>
+                                <li class="ols_li ols_lib">
+                                    <p class="ols_p">
+                                        <span style="color:#464855">Buy BTC</span>
+                                        <span style="color:#9da0ad;float: right;padding-right:10px">USD Balance:$ 5000.00</span>
+                                    </p>
+                                    <span class="spa1" style="margin-bottom:20px">Price</span>
+                                    <input type="number" placeholder="$11916.9"><br>
+                                    <span class="spa1">Amount</span>
+                                    <input type="number" placeholder="0.026547 BTC"><br>
+                                    <div class="s_box">
+                                        <i class="i1 i_a1">25%</i>
+                                        <i class="i1">50%</i>
+                                        <i class="i1">75%</i>
+                                        <i class="i1">100%</i>
+                                    </div>
+                                    <span class="spa1">Total</span>
+                                    <input type="number" placeholder="0.026547 BTC"><br>
+                                    <i class="i2"></i>
+                                    <p class="p0">Buy Btc</p>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+            </div>
+            </div>
+
+            <div class="tabl_box">
+                <div class="box_talb box_talbs">
+                    <div class="cent_bo2">
+                        <p class="pa1">Sell Order</p>
+                        <p style="float: right;margin-top:13px;margin-right:20px">
+                           Total BTC avaiable:6542.2547
+                        </p>
+                    </div>
+                        <table class="tal_as" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>Price Per BTC</th>
+                                <th>BTC Amount</th>
+                                <th>Date($)</th>
+                            </tr>
+                            <tr>
+                                <td>11900.12</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                                <td>11:23:25</td>
+                            </tr>
+                            <tr style="background-color:#e5f9f2">
+                                <td>11903.18</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                                <td>11:23:05</td>
+                            </tr>
+                            <tr>
+                                <td>11899.56</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                                <td>11:25:50</td>
+                            </tr>
+                            <tr>
+                                <td>14255.24</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                                <td>10:24:04</td>
+                            </tr>
+                            <tr>
+                                <td>14255.24</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                                <td>10:24:04</td>
+                            </tr>
+                            <tr>
+                                <td>11900.12</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                                <td>11:23:25</td>
+                            </tr>
+                            <tr>
+                                <td>11903.18</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                                <td>11:23:05</td>
+                            </tr>
+                            <tr>
+                                <td>11899.56</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                                <td>11:25:50</td>
+                            </tr>
+                            <tr>
+                                <td>14255.24</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                                <td>10:24:04</td>
+                            </tr>
+                            <tr style="background-color:#ffe9ec">
+                                <td>14255.24</td>
+                                <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                                <td>10:24:04</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                <div class="box_talb box_talba">
+                    <div class="cent_bo2">
+                        <p class="pa1">Buy Order</p>
+                        <p style="float: right;margin-top:13px;margin-right:20px">
+                            Total BTC avaiable:58424.365
+                        </p>
+                    </div>
+                    <table class="tal_as" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>Price Per BTC</th>
+                            <th>BTC Amount</th>
+                            <th>Date($)</th>
+                        </tr>
+                        <tr style="background-color:#ffe9ec">
+                            <td>11900.12</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                            <td>11:23:25</td>
+                        </tr>
+                        <tr>
+                            <td>11903.18</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                            <td>11:23:05</td>
+                        </tr>
+                        <tr>
+                            <td>11899.56</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                            <td>11:25:50</td>
+                        </tr>
+                        <tr>
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                        <tr>
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                        <tr>
+                            <td>11900.12</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.215</td>
+                            <td>11:23:25</td>
+                        </tr>
+                        <tr>
+                            <td>11903.18</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">1.545</td>
+                            <td>11:23:05</td>
+                        </tr>
+                        <tr>
+                            <td>11899.56</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.541</td>
+                            <td>11:25:50</td>
+                        </tr>
+                        <tr style="background-color:#ffe9ec">
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                        <tr>
+                            <td>14255.24</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.368</td>
+                            <td>10:24:04</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tal_boxa">
+                <div class="box_talbc">
+                    <div class="cent_bo2">
+                        <p class="pa1">Active Order</p>
+                        <p class="pc_a1">
+                            X Delete
+                        </p>
+                    </div>
+                    <table class="tal_as" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount BTC</th>
+                            <th>BTC Remaining</th>
+                            <th>Price</th>
+                            <th>USD</th>
+                            <th>FEE(%)</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-01-31 06:18:23</td>
+                            <td>Buy</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td><img style="padding-right:5px" src="img/bte.png">0.58647</td>
+                            <td>11900.12</td>
+                            <td>$ 6979.78</td>
+                            <td>0.2</td>
+                            <td class="td_a1">
+                                <p>Delete</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/fister—one.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        $(".nav_left_p").toggle(function(){
+            $(".nav_left").animate({"left":"-20%"},500);
+            $(".nav_righs").animate({"width":"100%"},500);
+        },function(){
+            $(".nav_left").animate({"left":"0%"},500);
+            $(".nav_righs").animate({"width":"80%"},500);
+        });
+
+        $(".td_a1 p").click(function(){
+            $(this).parent().parent().remove();
+        })
+    })
+
+
+    var myChats = echarts.init(document.getElementsByClassName("p_box")[0]);
+    var datas =[96.3,96.4,97.5,95.6,98.1,94.8,89.6,94.1,80.1,52.4,75.8,94.7];
+    option = {
+        backgroundColor:'',
+        xAxis: [{
+            type: 'category',
+        }],
+        yAxis: [{
+            axisTick: {
+                show:false
+            },
+            axisLine: {
+                show: false,
+            },
+        }],
+        series: [{
+            type: 'line',
+            symbolSize:4,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(82, 191, 255)',
+                },
+            },
+            data: datas
+        } ]
+    };
+    myChats.setOption(option);
+
+
+    var myChats1 = echarts.init(document.getElementsByClassName("p_box1")[0]);
+    var datas =[96.3,96.4,97.5,95.6,98.1,94.8,89.6,94.1,80.1,52.4,75.8,94.7];
+    option1 = {
+        backgroundColor:'',
+        xAxis: [{
+            type: 'category',
+        }],
+        yAxis: [{
+            axisTick: {
+                show:false
+            },
+            axisLine: {
+                show: false,
+            },
+        }],
+        series: [{
+            type: 'line',
+            symbolSize:4,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(82, 191, 255)',
+                },
+            },
+            data: datas
+        } ]
+    };
+    myChats1.setOption(option1);
+
+
+    var myChats2 = echarts.init(document.getElementsByClassName("p_box2")[0]);
+    var datas =[96.3,96.4,97.5,95.6,98.1,94.8,89.6,94.1,80.1,52.4,75.8,94.7];
+    option2 = {
+        backgroundColor:'',
+        xAxis: [{
+            type: 'category',
+        }],
+        yAxis: [{
+            axisTick: {
+                show:false
+            },
+            axisLine: {
+                show: false,
+            },
+        }],
+        series: [{
+            type: 'line',
+            symbolSize:4,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(82, 191, 255)',
+                },
+            },
+            data: datas
+        } ]
+    };
+    myChats2.setOption(option2);
+
+</script>

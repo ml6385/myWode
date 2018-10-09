@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Elements</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/fisrt—head.css">
+    <link rel="stylesheet" href="css/fisrt—one.css">
+    <style type="text/css">
+        .nav_righa{
+            width: 80%;
+            height:auto;
+            float:right;
+            margin-top:75px;
+            background-color:#e6e6e6;
+        }
+        .ri_h1{
+            width:94%;
+            height: 110px;
+            background-color:#e6e6e6;
+            margin:0 40px;
+            line-height:110px;
+            font-size:28px;
+        }
+        .ri_h1 small{
+            font-size:25px;
+            color:#978a7a;
+        }
+
+        .righa_box{
+            width:94%;
+            height:auto;
+            background-color:#ffffff;
+            margin:0 40px;
+            padding-bottom:1%;
+        }
+        .spa{
+            display: block;
+            width:94%;
+            height:56px;
+            background-color:#ffffff;
+            margin:0 3%;
+            line-height:56px;
+        }
+        .p1_a{
+            width: 94%;
+            height:52px;
+            background-color:#dff0d8;
+            line-height: 52px;
+            text-indent:15px;
+            font-size:16px;
+            font-weight:600;
+            color:#3c786f;
+            margin:2% 3%;
+        }
+
+        .right_boxa{
+            width:94%;
+            height:auto;
+            background-color:#e6e6e6;
+            margin:30px 40px;
+            overflow: hidden;
+        }
+
+        .rig_box1{
+            width:48.5%;
+            background-color:#ffffff;
+            padding-bottom:5%;
+        }
+        .inps{
+            width:90%;
+            height:22px;
+            border-radius:10px;
+            margin:3% 6%;
+            background-color:#f5f5f5;
+            position: relative;
+        }
+        .sp_a1{
+            position: absolute;
+            left:0;
+            top: 0;
+            width:40%;
+            height:22px;
+            background-color:#5cb85c;
+            border-top-left-radius:10px;
+            border-bottom-left-radius: 10px;
+        }
+        .spb{
+            text-indent:4%;
+        }
+
+        .right_boxb{
+            width:94%;
+            height:200px;
+            margin:0px 40px;
+        }
+
+
+        .sp_a2{
+            left:30%;
+            width:25%;
+            border-radius:0;
+            background-color:#f0ad4e;
+        }
+        .sp_a3{
+            background-color:#d9534f;
+            border-radius:0;
+            width:15%;
+            left:55%;
+        }
+        .sp_a4{
+            width:40%;
+        }
+
+        .righ-box{
+            width:94%;
+            height:auto;
+            margin:-60px 40px;
+            overflow: hidden;
+        }
+        .box_a{
+            width:58%;
+            height:auto;
+            background-color: #ffffff;
+            float: left;
+            padding-bottom:20px;
+        }
+
+        .box_b{
+            width:38%;
+            height:auto;
+            background-color:#ffffff;
+            float: right;
+            padding-bottom:20px;
+        }
+
+        .sec1{
+            width:80px;
+            height:30px;
+            background-color:#337ab7;
+            border-radius:10px;
+            text-indent:5px;
+            line-height:30px;
+            position: relative;
+            left:7%;
+            top: 0;
+            float: left;
+            margin-right:10px;
+
+        }
+        .i_o1{
+            display:block;
+            width:0;
+            height:0;
+            border:5px solid transparent;
+            border-top-color:#ffffff;
+            position:absolute;
+            right:6px;
+            top:12px;
+        }
+        .sec1_bo{
+            width:160px;
+            height:160px;
+            background-color:#ffffff;
+            position:absolute;
+            right:276px;
+            top:1200px;
+            text-indent:10px;
+            border:1px solid #d6d8d9;
+        }
+        .p_o1{
+            line-height:40px;
+        }
+        .p_o2{
+            line-height:40px;
+            border-top:1px solid rgba(0,0,0,0.5);
+        }
+        .sec1_bo1{
+            display: none;
+        }
+        .sec1_bo2{
+            right:184px;
+            display: none;
+        }
+
+        .sec1_bo3{
+            right:95px;
+            display: none;
+        }
+
+        .lj_bo{
+            width:94%;
+            background-color:#ffffff;
+            clear: both;
+        }
+        .pic_p{
+            width:90px;
+            height:35px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+            line-height:35px;
+            margin-left:8%;
+            border-radius:5px;
+            margin-right:-15px;
+            float: left;
+        }
+        .pic_p img{
+            margin-right:3px;
+        }
+        .pic_p1{
+            background-color:#337ab7;
+            color:#ffffff;
+        }
+        .pic_p2{
+            background-color:#d9534f;
+            color:#ffffff;
+        }
+
+        .sec_a1{
+           left:3%;
+        }
+
+        .lj_bo1{
+            margin-left:3%;
+        }
+        .spc{
+            text-indent:-3%;
+        }
+        .lj_bo .pic_p3{
+            margin-left:0%;
+        }
+
+        .right_boxca{
+            width:94%;
+            background-color:#e6e6e6;
+            margin:90px 40px;
+        }
+        .right_boxca img:nth-of-type(1){
+            margin-left:6%;
+        }
+
+        /*媒体查询*/
+        @media screen and (min-width:640px) and (max-width:1200px){
+            .nav_left{
+                display: none;
+            }
+            .nav_righa{
+                overflow: hidden;
+                width: 100%;
+            }
+            .right_boxa{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .righa_box{
+                width:98%;
+            }
+            .rig_box1{
+                width:98%;
+
+            }
+            .rig_box2{
+                margin-top:20px;
+            }
+            .right_boxb{
+                width:98%;
+            }
+            .rig_box3{
+                margin:40px 2% 40px 0;
+            }
+            .righ-box{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .box_a{
+                width:100%;
+            }
+            .box_b{
+                width:100%;
+                margin:40px 0 20px 0;
+            }
+            .right_boxca{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .rig_box2{
+                margin-top:30px;
+                margin-bottom:-100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <s></s>
+    <p class="head_p">
+        <i class="iconfont icon-shezhi2"></i>
+        <span class="head_span">HYBRID</span>
+    </p>
+    <ul class="head_uls">
+        <li class="lis">
+            <i class="iconfont icon-youjian ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-fenlei ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-icon-- ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-renshu ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+    </ul>
+</header>
+
+<!--划过邮箱-->
+<div class="show jonhs">
+    <div class="jonh_box">
+        <span>John Doe</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Today</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    </div>
+    <div class="jonh_box">
+        <span>John Smith</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
+    </div>
+    <div class="jonh_box">
+        <span>John Smith</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+    </div>
+    <a class="jn_a" href="#">Read All Messages > </a>
+</div>
+
+<!--划过分类-->
+<div class="show fen">
+    <div class="fen_box">
+        <span>Task 1</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 2</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">28% Complete</span>
+        <div class="box_js">
+            <img src="img/lanse.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 3</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 4</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">85% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <a class="jn_a" href="#">See All Tasks > </a>
+</div>
+
+<!--铃铛-->
+<div class="show ling_box">
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <a class="jn_a" href="#">See All Tasks > </a>
+</div>
+
+<!--用户-->
+<div class="show nams">
+    <span> <i class="iconfont icon-renshu ic1"></i>User Profile</span>
+    <span> <i class="iconfont icon-renshu ic1"></i>Settings</span>
+    <span> <i class="iconfont icon-fenlei"></i>Logout</span>
+</div>
+
+<!--中间-->
+<div class="nav">
+    <!--列表-->
+    <div class="nav_left">
+        <ul class="nav_left_uls">
+            <li class="lisa"><i class="iconfont icon-fenlei"></i>Dashboard</li>
+            <!--点击按钮列表隐藏-->
+            <p class="nav_left_p">
+                <b></b>
+            </p>
+
+            <li class="lisb lisd"><i class="iconfont icon-fenlei"></i>UI Elements</li>
+            <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Tabs & Panels</li>
+            <li class="lisb lisv"><i class="iconfont icon-fenlei"></i>Responsive Tables</li>
+            <li class="lisb"><i class="iconfont icon-fenlei"></i>Forms</li>
+
+            <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Multi-Level Dropdown
+                <span class="lisc_sa" style="padding-left:45px"> < </span>
+                <ul class="lisc_uls">
+                    <li>Second Level Link</li>
+                    <li>Second Level Link</li>
+                    <li class="lisc_licv">Second Level Link
+                        <span style="padding-left:140px;font-size:16px"> < </span>
+                        <ul class="lisd_uls">
+                            <li>level Link is to</li>
+                            <li>level Link is to</li>
+                            <li>level Link is to</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="lisb"><i class="iconfont icon-fenlei"></i>Empty Page</li>
+        </ul>
+    </div>
+
+    <!--右边-->
+    <div class="nav_righa">
+        <h1 class="ri_h1">
+            UI Elements
+            <small>This is your UI elements section</small>
+        </h1>
+        <div class="righa_box">
+            <span class="spa">Messages</span>
+            <p class="p1_a">
+                You successfully read this important alert message.
+            </p>
+            <p class="p1_a" style="background-color: #d9edf7">
+                You successfully read this important alert message.
+            </p>
+            <p class="p1_a" style="background-color: #fcf8e3">
+                You successfully read this important alert message.
+            </p>
+            <p class="p1_a" style="background-color: #f2dede;">
+                You successfully read this important alert message.
+            </p>
+        </div>
+
+        <div class="right_boxa">
+            <div class="rig_box1" style="float:left">
+                <span class="spa spb">Simple Progress Bars</span>
+                <p class="inps">
+                    <span class="sp_a1"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#5bc0de;width:25%"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#f0ad4e;width:60%"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#d9534f;width:80%;"></span>
+                </p>
+            </div>
+
+            <div class="rig_box1 rig_box2" style="float:right;">
+                <span class="spa spb">Simple Progress Bars</span>
+                <p class="inps">
+                    <span class="sp_a1"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#5bc0de;width:25%"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#f0ad4e;width:60%"></span>
+                </p>
+                <p class="inps">
+                    <span class="sp_a1" style="background-color:#d9534f;width:80%;"></span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="right_boxb">
+            <div class="rig_box1" style="float:left;padding:0">
+                <span class="spa spb">Animated Progress Bars</span>
+                <p class="inps">
+                    <img src="img/蓝色.png" class="sp_a1">
+                </p>
+            </div>
+            <div class="rig_box1 rig_box3" style="float: right;padding:0">
+                <span class="spa spb">Animated Progress Bars</span>
+                <p class="inps">
+                    <span class="sp_a1 sp_a4"></span>
+                    <span class="sp_a1 sp_a2"></span>
+                    <span class="sp_a1 sp_a3"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="righ-box">
+            <div class="box_a">
+                <span class="spa">Simple Buttons Examples</span>
+                <span class="spa">Default Button</span>
+                <p class="sec1 sec_a1">Action
+                    <i class="i_o1"></i>
+                </p>
+                <p class="sec1 sec_a1">Action
+                    <i class="i_o1"></i>
+                </p>
+                <p class="sec1 sec_a1">Action
+                    <i class="i_o1"></i>
+                </p>
+                <p class="sec1 sec_a1">Action
+                    <i class="i_o1"></i>
+                </p>
+
+                <div class="lj_bo lj_bo1">
+                    <span class="spa spb spc">Buttons With Icons</span>
+                    <p class="pic_p pic_p3"><img src="img/刷新.png">Update</p>
+                    <p class="pic_p pic_p1"><img src="img/铅笔.png">Edit</p>
+                    <p class="pic_p pic_p2"><img src="img/删除.png">Delete</p>
+                </div>
+
+            </div>
+            <div class="box_b">
+                <span class="spa spb">Button Dropdowns</span>
+                <span class="spa spb">Simple Button Dropdown Examples</span>
+                <p class="sec1 sec2">Action
+                    <i class="i_o1"></i>
+                    <div class="sec1_bo sec1_bo1">
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o2">Separated link</p>
+                    </div>
+                </p>
+                <p class="sec1 sec3" style="color:#d9534f">Danger
+                    <i class="i_o1"></i>
+                    <div class="sec1_bo sec1_bo2">
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o2">Separated link</p>
+                    </div>
+                <p class="sec1 sec4" style="color:#f0ad4e">Info
+                    <i class="i_o1"></i>
+                    <div class="sec1_bo sec1_bo3">
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o1">Action</p>
+                        <p class="p_o2">Separated link</p>
+                    </div>
+                </p>
+
+                <div class="lj_bo">
+                    <span class="spa spb">Buttons With Icons</span>
+                    <p class="pic_p"><img src="img/刷新.png">Update</p>
+                    <p class="pic_p pic_p1"><img src="img/铅笔.png">Edit</p>
+                    <p class="pic_p pic_p2"><img src="img/删除.png">Delete</p>
+                </div>
+
+            </div>
+
+    </div>
+
+    <div class="right_boxca">
+            <div class="rig_box1" style="float:left;padding:0">
+                <span class="spa spb">Simple Progress Bars</span>
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <p style="line-height:70px;font-size:14px;text-indent:6%">Get more components at official bootstrap website i.e getbootstrap.com or</p>
+            </div>
+
+            <div class="rig_box1 rig_box2" style="float:right;padding:0">
+                <span class="spa spb">Simple Progress Bars</span>
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <img src="img/book.png">
+                <p style="line-height:70px;font-size:14px;text-indent:6%">Get more components at official bootstrap website i.e getbootstrap.com or</p>
+            </div>
+
+        </div>
+
+    <p style="margin-left:3%;line-height:100px">Copyright © 2018.Company name All rights reserved.More Templates </p>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/fister—one.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        $(".sec2").toggle(function () {
+            $(".sec1_bo1").css("display","block");
+            $(".sec1_bo2").css("display","none");
+            $(".sec1_bo3").css("display","none");
+        },function () {
+            $(".sec1_bo1").css("display","none");
+        })
+
+        $(".sec3").toggle(function () {
+            $(".sec1_bo2").css("display","block");
+            $(".sec1_bo1").css("display","none");
+            $(".sec1_bo3").css("display","none");
+        },function () {
+            $(".sec1_bo2").css("display","none");
+        })
+
+        $(".sec4").toggle(function () {
+            $(".sec1_bo3").css("display","block");
+            $(".sec1_bo1").css("display","none");
+            $(".sec1_bo2").css("display","none");
+        },function () {
+            $(".sec1_bo3").css("display","none");
+        })
+
+        $(".box_b").click(function(){
+            $(".sec1_bo1").css("display","none");
+            $(".sec1_bo2").css("display","none");
+            $(".sec1_bo3").css("display","none");
+        })
+
+
+        $(".nav_left_p").toggle(function(){
+            $(".nav_left").animate({"left":"-20%"},500);
+            $(".nav_righa").animate({"width":"100%"},500);
+        },function(){
+            $(".nav_left").animate({"left":"0%"},500);
+            $(".nav_righa").animate({"width":"80%"},500);
+        });
+
+
+    })
+
+</script>

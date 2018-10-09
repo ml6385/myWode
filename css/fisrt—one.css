@@ -1,0 +1,408 @@
+
+/*数据*/
+.nav .nav_right{
+    width:80%;
+    background-color:#e6e6e6;
+    float:right;
+}
+.right_h1{
+    padding:100px 0 0 53px;
+    line-height: 112px;
+}
+.right_h1 small{
+    font-size: 26px;
+    color: #9ba3a2;
+}
+.right_p{
+    height: 75px;
+    background: #ffffff;
+    margin:0 50px 26px 53px;
+    font-size: 20px;
+    color: #337ab7;
+    line-height:75px;
+    text-indent: 25px;
+}
+.right_p span{
+    color: #777777;
+}
+.right_box{
+    padding:0 50px 10px 53px;
+    overflow: hidden;
+    display: flex;
+}
+.right_box_a{
+    width:25%;
+    height: 155px;
+    background-color:#ffffff;
+    /*float: left;*/
+}
+.right_box_a img{
+    width:120px;
+    height:120px;
+    padding:17px 19px 0 15px;
+}
+
+.right_box_ac{
+    padding-top:20px;
+    float:left;
+}
+
+.right_box_ab{
+    padding:15px 0 10px 20px;
+}
+
+.right_box_b{
+    width:22%;
+    background-color:#ffffff;
+    /*float: left;*/
+}
+.right_box_c{
+    margin:0 3% 0 3%;
+}
+.right_box_d{
+    margin-right:3%;
+}
+
+/*Area Chart*/
+.chart_box{
+    clear: both;
+    width: 35%;
+    background-color:#ffffff;
+    float: left;
+    margin-left:53px;
+    margin-top:30px;
+    margin-right: 32px;px;
+}
+.hcart_boxa{
+    height:420px;
+}
+/*Line Chart*/
+.chart_line{
+    width:54%;
+    height:420px;
+    background-color:#ffffff;
+    float:left;
+    margin-top:30px;
+}
+
+
+.bar_box{
+    width: 100%;
+    clear: both;
+    background:hotpink;
+    padding:0 50px 0 53px;
+}
+
+.bar_box_di{
+    width:21.5%;
+    height: 278px;
+    background-color:#ffffff;
+    margin:25px 24px 25px 0;
+    float: left;
+}
+.bar_box_dia{
+    margin-right:0;
+}
+.bar_box_di h4{
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+}
+.bing{
+    width:260px;
+    height:208px;
+}
+
+.zhuzhuang{
+    width:68%;
+    height:400px;
+    background-color:#ffffff;
+    margin:50px 0 35px 53px;
+    clear: both;
+    float: left;
+}
+.zhu_chat{
+    height: 400px;
+}
+
+/*柱状图2*/
+.b_zhuang{
+    width: 21%;
+    height:400px;
+    background-color:#ffffff;
+    float: right;
+    margin:50px 48px 35px 0;
+}
+.bzhuang{
+    padding-top:20px;
+    height:330px;
+}
+
+/*Tasks Panels*/
+.tak_box{
+    width:32%;
+    height: auto;
+    background-color:#ffffff;
+    clear: both;
+    margin:0 36px 0 53px;
+    float: left;
+}
+.tak_box_tab{
+    width:90%;
+    height:310px;
+    margin:0 5% 0 5%;
+    border:1px solid #dddddd;
+    border-radius:5px;
+}
+.tak_box_tab td{
+    height:51px;
+    border:1px solid #dddddd;
+    text-indent: 20px;
+    cursor: pointer;
+}
+.td_spa{
+    line-height: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    float: right;
+    background-color: #24c2ce;
+    text-align: center;
+    border-radius:10px;
+    margin-right:10px;
+}
+
+h3{
+    line-height: 78px;
+    text-indent: 20px;
+}
+.a1{
+    line-height: 70px;
+    font-size: 15px;
+    color: #337ab7;
+    float: right;
+    padding-right:5%;
+}
+
+/*Responsive Table Example*/
+.exam_box{
+    width:56%;
+    height:auto;
+    background-color:#ffffff;
+    float:right;
+    margin-right:50px;
+    padding-bottom:50px;
+}
+
+.tak_box_tac{
+    width:84%;
+    height:auto;
+    background-color:#ffffff;
+    clear: both;
+    float: left;
+    border:1px solid #dddddd;
+    margin-left:20px;
+}
+.tak_box_tac th{
+    line-height:46px;
+    border:1px solid #dddddd;
+    text-align: left;
+    text-indent:20px;
+    padding: 0 20px;
+}
+.tak_box_tac td{
+    height:46px;
+    border:1px solid #dddddd;
+    text-indent: 20px;
+    cursor: pointer;
+}
+
+.pd_bx{
+    clear: both;
+    float: left;
+    margin-left: 53px;
+    line-height: 135px;
+}
+
+
+
+/*划过邮箱*/
+.jonhs{
+    width:670px;
+    height: 310px;
+    background-color: #ffffff;
+    position: fixed;
+    right: 220px;
+    top: 80px;
+    text-indent:25px;
+    display: none;
+}
+.jonhs .jonh_box{
+    border-bottom:1px solid #e2e2e2;
+}
+.jonh_box span{
+    color:#272727;
+    line-height: 47px;
+}
+.jonh_box p{
+    color:#b0b0b0;
+    margin-bottom:20px;
+}
+.jonh_box span:hover{
+    color:#80bdff;
+}
+.jonh_box p:hover{
+    color:#80bdff;
+}
+.jn_a{
+    display: block;
+    color:#6da598;
+    font-size:16px;
+    line-height:42px;
+    text-align: center;
+}
+
+/*划过分类*/
+.fen{
+    width: 317px;
+    height: 330px;
+    position: fixed;
+    background-color:#ffffff;
+    right:140px;
+    top: 80px;
+    text-indent:20px;
+    display: none;
+}
+.fen_box{
+    height:70px;
+    border:1px solid #e4e4e4;
+}
+.fen span{
+    color:#272727;
+    line-height:50px;
+}
+.box_js {
+    width: 86%;
+    height: 15px;
+    background-color: #f5f5f5;
+    margin: 0 20px 0 20px;
+    position: relative;
+}
+.box_js img{
+    display: inline-block;
+    z-index:99;
+    width:60%;
+    height:15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*铃铛*/
+.ling_box{
+    width:240px;
+    height: 300px;
+    position: fixed;
+    background-color:#ffffff;
+    right:50px;
+    top: 80px;
+    display: none;
+    text-indent:20px;
+}
+.li_box{
+    width: 240px;
+    height:50px;
+    line-height:50px;
+    border-bottom:1px solid #e4e4e4;
+}
+
+/*用户*/
+.nams{
+    width: 150px;
+    height: 130px;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-color: #ffffff;
+    text-indent:20px;
+    display: none;
+}
+.nams i{
+    color:#32b2bd;
+    padding-right:10px;
+}
+.nams span{
+    display: block;
+    line-height:40px;
+}
+.nams span:nth-of-type(2){
+    border-bottom:1px solid #e4e4e4;
+
+}
+
+
+/*媒体查询*/
+@media screen and (min-width:340px) and (max-width:1100px){
+    .nav_left{
+        display: none;
+    }
+    .right_p{
+        width:100%;
+    }
+    .nav .nav_right{
+        width:100%;
+    }
+    .right_box{
+        flex-direction: column;
+        display: flex;
+        width:100%;
+    }
+    .right_box_a{
+        width:100%;
+        margin-top:10px;
+    }
+    .right_box_b{
+        width:100%;
+        display: flex;
+        margin-top: 10px;
+    }
+    .right_box_c{
+        margin-left:0;
+    }
+    .chart_box{
+        width:100%;
+        margin-right:-10px;
+    }
+    .chart_line{
+        width:100%;
+        margin-left:53px;
+    }
+    .bar_box{
+        width: 100%;
+    }
+    .bar_box_di{
+        width:47%;
+    }
+    .zhuzhuang{
+        width:100%;
+    }
+    .b_zhuang{
+        width:100%;
+        margin-right:-53px;
+    }
+    .tak_box{
+        width:100%;
+    }
+    .bing{
+        width:100%;
+    }
+    .exam_box{
+        width:100%;
+        margin-top:10px;
+        margin-right:20px;
+    }
+    .tak_box_tac{
+        width:100%;
+    }
+
+
+}

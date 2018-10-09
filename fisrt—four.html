@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Tables</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/fisrt—head.css">
+    <link rel="stylesheet" href="css/fisrt—one.css">
+    <style type="text/css">
+        .nav_righsa{
+            width:80%;
+            float: right;
+            margin-top:75px;
+            background-color:#e6e6e6;
+        }
+        .right_h2{
+            width:100%;
+            color:#333333;
+            line-height:110px;
+            margin:20px 40px 0 40px;
+            font-size:40px;
+        }
+        .right_h2 small{
+            color:#777777;
+            font-size:27px;
+        }
+
+        .box_tab{
+            width:95%;
+            background-color:#fff;
+            margin:0 40px 0 40px;
+        }
+
+        .p_av{
+            color:#000000;
+            font-size:15px;
+            line-height:53px;
+            padding-left:15px;
+        }
+        .bx_pa{
+            float: left;
+            margin-bottom: 30px;
+        }
+        .sel{
+            width:70px;
+            height:28px;
+            margin:0 15px 0 15px;
+        }
+        .box_div{
+            float: right;
+            margin:0 15px 0 0px;
+        }
+
+        .table{
+            width:97%;
+            height: auto;
+            border:1px solid #dddddd;
+            margin:15px 15px 0 15px;
+        }
+        .table tr th{
+            text-align: left;
+            color:#333333;
+            font-weight:600;
+            line-height:38px;
+            text-indent:5px;
+        }
+        .table td{
+            text-indent:5px;
+            line-height:38px;
+            color:#333333;
+        }
+        .spc_s{
+            margin-left:15px;
+            line-height:60px;
+        }
+
+        .ul_la{
+            height:33px;
+            float: right;
+            margin-right:20px;
+            margin-top:15px;
+        }
+        .ul_la li:first-child{
+            width:80px;
+        }
+        .ul_la li{
+            width:50px;
+            float: left;
+            border:1px solid #dddddd;
+            text-align: center;
+            line-height:33px;
+        }
+
+
+        .tb_boa{
+            width:95%;
+            margin:20px 0 0 40px;
+            overflow:hidden;
+        }
+        .tal_x{
+            width:48%;
+            float: left;
+            padding-bottom:40px;
+        }
+        .tb_boa .boab_tb1{
+            width:100%;
+        }
+        .tb_boa .boab_tb1 th{
+            line-height:40px;
+            color:#000000;
+            text-align: left;
+            text-indent:10px;
+        }
+        .tb_boa .boab_tb1 td{
+            height:40px;
+            line-height:38px;
+            color:#000000;
+            text-indent:10px;
+        }
+        .tal_xa{
+            width:48%;
+            float:right;
+            padding-bottom:40px;
+        }
+        .boab_tb2{
+            width:100%;
+        }
+
+
+        /*媒体查询*/
+        @media screen and (min-width:640px) and (max-width:1200px){
+            .nav_left{
+                display: none;
+            }
+            .nav_righsa{
+                width:100%;
+            }
+            .tb_boa{
+                display: flex;
+                flex-direction: column;
+            }
+            .tal_x{
+                width:100%;
+            }
+            .tal_xa{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <s></s>
+    <p class="head_p">
+        <i class="iconfont icon-shezhi2"></i>
+        <span class="head_span">HYBRID</span>
+    </p>
+    <ul class="head_uls">
+        <li class="lis">
+            <i class="iconfont icon-youjian ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-fenlei ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-icon-- ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+        <li class="lis">
+            <i class="iconfont icon-renshu ic1"></i>
+            <i class="iconfont icon-xiajiantou ic2"></i>
+        </li>
+    </ul>
+</header>
+
+<!--划过邮箱-->
+<div class="show jonhs">
+    <div class="jonh_box">
+        <span>John Doe</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Today</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    </div>
+    <div class="jonh_box">
+        <span>John Smith</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
+    </div>
+    <div class="jonh_box">
+        <span>John Smith</span>
+        <i style="color:#ff4a69;float:right;margin-right:25px;line-height: 47px">Yesterday</i>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+    </div>
+    <a class="jn_a" href="#">Read All Messages > </a>
+</div>
+
+<!--划过分类-->
+<div class="show fen">
+    <div class="fen_box">
+        <span>Task 1</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 2</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">28% Complete</span>
+        <div class="box_js">
+            <img src="img/lanse.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 3</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">60% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <div class="fen_box">
+        <span>Task 4</span>
+        <span style="color:#ff4a69;float:right;margin-right:25px;line-height:50px">85% Complete</span>
+        <div class="box_js">
+            <img src="img/绿色.gif">
+        </div>
+    </div>
+    <a class="jn_a" href="#">See All Tasks > </a>
+</div>
+
+<!--铃铛-->
+<div class="show ling_box">
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <div class="li_box">
+        <span style="float: left"> <i class="iconfont icon-weixin"></i> New Comment</span>
+        <span style="float: right;padding-right:20px;color:#e01d20;">4 min</span>
+    </div>
+    <a class="jn_a" href="#">See All Tasks > </a>
+</div>
+
+<!--用户-->
+<div class="show nams">
+    <span> <i class="iconfont icon-renshu ic1"></i>User Profile</span>
+    <span> <i class="iconfont icon-renshu ic1"></i>Settings</span>
+    <span> <i class="iconfont icon-fenlei"></i>Logout</span>
+</div>
+
+<!--中间-->
+<div class="nav">
+    <!--列表-->
+    <div class="nav_left">
+        <ul class="nav_left_uls">
+            <li class="lisa"><i class="iconfont icon-fenlei"></i>Dashboard</li>
+            <!--点击按钮列表隐藏-->
+            <p class="nav_left_p">
+                <b></b>
+            </p>
+
+            <li class="lisb lisd"><i class="iconfont icon-fenlei"></i>UI Elements</li>
+            <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Tabs & Panels</li>
+            <li class="lisb lisv"><i class="iconfont icon-fenlei"></i>Responsive Tables</li>
+            <li class="lisb"><i class="iconfont icon-fenlei"></i>Forms</li>
+
+            <li class="lisb lisc"><i class="iconfont icon-fenlei"></i>Multi-Level Dropdown
+                <span class="lisc_sa" style="padding-left:45px"> < </span>
+                <ul class="lisc_uls">
+                    <li>Second Level Link</li>
+                    <li>Second Level Link</li>
+                    <li class="lisc_licv">Second Level Link
+                        <span style="padding-left:140px;font-size:16px"> < </span>
+                        <ul class="lisd_uls">
+                            <li>level Link is to</li>
+                            <li>level Link is to</li>
+                            <li>level Link is to</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="lisb"><i class="iconfont icon-fenlei"></i>Empty Page</li>
+        </ul>
+    </div>
+
+    <!--右边-->
+    <div class="nav_righsa">
+        <h1 class="right_h2">Dashboard
+            <small>Summary of your App</small>
+        </h1>
+
+        <div class="box_tab">
+            <p class="p_av">Advanced Tables</p>
+            <div class="bx_pa">
+                <select class="sel">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <span>records per page</span>
+            </div>
+            <div class="box_div">
+                <span>Search:<input type="text"></span>
+            </div>
+            <table class="table" cellpadding="0" cellspacing="0" border="1">
+                <tr height="15px">
+                    <th>rendering</th>
+                    <th>browser</th>
+                    <th>platform</th>
+                    <th>engine</th>
+                    <th>css gread</th>
+                </tr>
+                <tr>
+                    <td>gecko</td>
+                    <td>firefox1.0</td>
+                    <td>firefox1.0</td>
+                    <td>firefox1.0</td>
+                    <td>firefox1.0</td>
+                </tr>
+                <tr>
+                    <td>gecko</td>
+                    <td>firefox2.0</td>
+                    <td>firefox2.0</td>
+                    <td>1.7</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>gecko</td>
+                    <td>firefox2.0</td>
+                    <td>firefox2.0</td>
+                    <td>1.7</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>gecko</td>
+                    <td>firefox2.0</td>
+                    <td>firefox2.0</td>
+                    <td>1.7</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>gecko</td>
+                    <td>firefox2.0</td>
+                    <td>firefox2.0</td>
+                    <td>1.7</td>
+                    <td>A</td>
+                </tr>
+            </table>
+            <span class="spc_s">Showing 1 to 10 of 57 entries</span>
+            <ul class="ul_la">
+                <li>Previous</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>Next</li>
+            </ul>
+        </div>
+
+        <div class="tb_boa" >
+            <div class="tal_x">
+                <p style="line-height:40px">Kitchen Sink</p>
+                <table class="boab_tb1" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tal_xa">
+                <p style="line-height:40px">Basic Table</p>
+                <table class="boab_tb1 boab_tb2" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tb_boa" >
+            <div class="tal_x">
+                <p style="line-height:40px">Kitchen Sink</p>
+                <table class="boab_tb1" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tal_xa">
+                <p style="line-height:40px">Basic Table</p>
+                <table class="boab_tb1 boab_tb2" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tb_boa" >
+            <div class="tal_x">
+                <p style="line-height:40px">Kitchen Sink</p>
+                <table class="boab_tb1" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tal_xa">
+                <p style="line-height:40px">Basic Table</p>
+                <table class="boab_tb1 boab_tb2" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mark</td>
+                        <td>otto</td>
+                        <td>@120</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>odd</td>
+                        <td>@154</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tom</td>
+                        <td>ass</td>
+                        <td>@187</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/fister—one.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        $(".nav_left_p").toggle(function(){
+            $(".nav_left").animate({"left":"-20%"},500);
+            $(".nav_righsa").animate({"width":"100%"},500);
+        },function(){
+            $(".nav_left").animate({"left":"0%"},500);
+            $(".nav_righsa").animate({"width":"80%"},500);
+        });
+
+    })
+
+
+    window.onload=function(){
+        var tr=document.getElementsByTagName("tr");
+        var le=0;
+        for(var i=0;i<tr.length;i++) {
+            le++;
+            if (le%2==0){
+                tr[i].style.backgroundColor="rgba(0,0,0,0.1)";
+            } else{
+                tr[i].style.backgroundColor="#ffffff";
+            }
+        }
+    }
+
+</script>
